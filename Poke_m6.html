@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample_GoogleMap</title>
+
+    <style>
+        html { height: 100% }
+        body { height: 100% }
+        #map { height: 100%; width: 100% }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- リンク先を表示（alt + クリック） -->
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyA4z0JFtnMLEtNSjnlE4uU7XpZ1kQFq-vw&language=ja"></script>
+
+    <script>
+        var MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
+
+        var Options = {
+            zoom: 15, // 地図のズームを指定
+            center: MyLatLng, // 地図の中心を指定
+            mapTypeId: 'roadmap' // 地図の種類を指定
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), Options);
+    </script>
+<body>
+    <h1>live server</h1>
+</body>
+</html>
